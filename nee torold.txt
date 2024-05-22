@@ -1,0 +1,43 @@
+      
+      <div id="page">
+<div class="pagination">
+  <button class="btn1"> prev</button> 
+  <ul> 
+    <li class="link active" value="1" onclick="activeLink" >1</li>
+    <li class="link" value="2" onclick="activeLink" >2</li>
+    <li class="link" value="3"  onclick="activeLink">3</li>
+  </ul>
+  <button class="btn2">  next</button>
+</div>
+      </div>
+<script>
+let link = document-getElemetsByClassname{"link"}
+let currentValue = 1;
+Function activelink{}{
+  for{1 of link}{
+1.classlist.remove("active");
+}
+event.target.classlist.add("active")
+
+currentValue = event.target.value;
+}
+
+function backBtn{}{
+  if(currentValue > 1){
+    for(1 of a link){
+      1.classlist.remove("active")
+    }
+    currentValue--;
+    link{currentValue-1}.classlist.add{"active"}
+  }
+}
+function nextbtn{}{
+  if(currentValue > 1){
+    for(1 of a link){
+      1.classlist.remove("active")
+    }
+    currentValue--;
+    link{currentValue-1}.classlist.add{"active"}
+  }
+}
+</script>
